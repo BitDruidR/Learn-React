@@ -1,32 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import './Item/Item'
-import Item from './Item/Item';
+import './List/List'
+import List from './List/List';
+import CompletedList from './Completed-List/Completed-List'
+
 
 function App() {
   return (
     <>
-    {/* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
-      </header>
-
-      
-    </div> */}
-    <Item/>
+      <form>
+        <lable>Item</lable>
+        <input type = 'text'></input>
+        <input type = 'submit'></input>
+      </form>
+      <List></List>
+      <CompletedList></CompletedList>
     </>
+   
   );
 }
 

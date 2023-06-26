@@ -1,9 +1,13 @@
 import classes from './Item.module.css'
-function Item(){
+
+
+function Item(props){
     return(
-        <div className = {classes.item}>
-            <p>Hallo World!</p>
-        </div>
+        <>
+            <input type = 'checkbox'></input>
+            <lable>{props.Description}</lable>
+            <br></br>
+        </>
     );
 }
 
